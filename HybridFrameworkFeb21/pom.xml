@@ -59,7 +59,7 @@
 
 					<systemPropertyVariables>
 						<executionBrowser>${browser}</executionBrowser>
-						<appURL>${urlToBeTested}</appURL>
+						<appURL>${appURL}</appURL>
 					</systemPropertyVariables>
 
 				</configuration>

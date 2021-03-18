@@ -1,7 +1,5 @@
 /*
- * 
  * @Author Amit Mahale
- * 
  * 
  */
 
@@ -15,6 +13,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -50,13 +49,15 @@ public class BaseClass {
 		System.out.println("LOG:INFO : Report is set");
 	}
 
+	@Parameters({"browser","appURL"})
 	@BeforeClass
-	public void startBrowser() {
+	public void startBrowser(String browser, String url) {
 		
 		System.out.println("LOG:INFO : Starting the browser session");
 
 		//ConfigDataProvider config = new ConfigDataProvider();
-		driver = new BrowserFactory().startBrowser(DataProviderFactory.getConfig().getBrowser(), DataProviderFactory.getConfig().getURL());
+		//driver = new BrowserFactory().startBrowser(DataProviderFactory.getConfig().getBrowser(), DataProviderFactory.getConfig().getURL());
+		driver = new BrowserFactory().startBrowser(browser, url);
 		//System.out.println("Driver value "+ driver);
 		
 	}

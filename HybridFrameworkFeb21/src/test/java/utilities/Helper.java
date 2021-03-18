@@ -25,6 +25,13 @@ import org.testng.Reporter;
 public class Helper {
 
 	
+	public void gitMethod() {
+		
+		System.out.println("GitHUb");
+	}
+	
+	
+	
 	//JUST WAIT METHOD using THREAD CLASS//************************************************************
 	public static void jutWait(int timeInSeconds, String stepInfo) {
 		

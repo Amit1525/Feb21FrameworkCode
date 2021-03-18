@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">32,629</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.TestUserPage</td><td><a href="#m0">createUser</a></td><td rowspan="1">1616034663758</td><td rowspan="1">25909</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.SmokeTest</td><td><a href="#m1">validLogin</a></td><td rowspan="1">1616034663668</td><td rowspan="1">4578</td></tr><tr class="passedodd"><td rowspan="3">testcases.TestAdminPage</td><td><a href="#m2">clickOnAdminLinkTest</a></td><td rowspan="1">1616034667214</td><td rowspan="1">2242</td></tr><tr class="passedodd"><td><a href="#m3">verifyAfterLoginTest</a></td><td rowspan="1">1616034663668</td><td rowspan="1">3439</td></tr><tr class="passedodd"><td><a href="#m4">verifyLogoutTest</a></td><td rowspan="1">1616034669528</td><td rowspan="1">78</td></tr><tr class="passedeven"><td rowspan="5">testcases.TestLoginPage</td><td><a href="#m5">loginTest</a></td><td rowspan="1">1616034664883</td><td rowspan="1">3141</td></tr><tr class="passedeven"><td><a href="#m6">logoutTest</a></td><td rowspan="1">1616034668231</td><td rowspan="1">1259</td></tr><tr class="passedeven"><td><a href="#m7">verifyLogoutTest</a></td><td rowspan="1">1616034669592</td><td rowspan="1">13</td></tr><tr class="passedeven"><td><a href="#m8">verifySocialLinksTest</a></td><td rowspan="1">1616034664508</td><td rowspan="1">303</td></tr><tr class="passedeven"><td><a href="#m9">verifyTitleTest</a></td><td rowspan="1">1616034663769</td><td rowspan="1">25</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">testcases.TestUserPage#createUser</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">LOG:INFO-Type username<br/>LOG:INFO-Type password<br/>LOG:INFO-Click on button<br/>LOG:INFO-Click on Admin Tab<br/>LOG:INFO-Click on Add Button<br/>LOG:INFO-Type Employee Name<br/>LOG:INFO-Emp Name<br/>LOG:INFO-Type password<br/>LOG:INFO-Type password again<br/>LOG:INFO-Click on Save button</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[contains(text(),&apos;Successfully Saved&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AMIT-MAHALE&apos;, ip: &apos;192.168.29.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\amit1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49808}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8757317b195afdab8891b2897f11858e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at utilities.Helper.verifyPartialMessages(Helper.java:158)
+	at pages.UserPage.addUser(UserPage.java:38)
+	at testcases.TestUserPage.createUser(TestUserPage.java:29)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.SmokeTest#validLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">LOG:INFO-Type username<br/>LOG:INFO-Type password<br/>LOG:INFO-Click on button</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.TestAdminPage#clickOnAdminLinkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.TestAdminPage#verifyAfterLoginTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">LOG:INFO-Type username<br/>LOG:INFO-Type password<br/>LOG:INFO-Click on button</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.TestAdminPage#verifyLogoutTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.TestLoginPage#loginTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">LOG:INFO-Type username<br/>LOG:INFO-Type password<br/>LOG:INFO-Click on button</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcases.TestLoginPage#logoutTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testcases.TestLoginPage#verifyLogoutTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testcases.TestLoginPage#verifySocialLinksTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testcases.TestLoginPage#verifyTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

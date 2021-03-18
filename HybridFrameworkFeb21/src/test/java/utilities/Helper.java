@@ -44,7 +44,6 @@ public class Helper {
 		Reporter.log("LOG INFO: " + stepInfo, true);
 	}
 	
-	
 	// ACTION CLASS METHODS****************************************************************************
 	public static void waitForWebElementAndPerformDragNDrop(WebDriver driver, By srcLocator, By destLocator,String stepInfo) {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -95,7 +94,6 @@ public class Helper {
 		Actions act = new Actions(driver);
 		act.moveToElement(element1).pause(Duration.ofSeconds(waitTimeInSeconds)).build().perform();
 	}
-	//*********************************************************************************************	
 	
 		
 	//*****************************JAVASCRIPT METHODS//*********************************************
@@ -217,8 +215,6 @@ public class Helper {
 		return element;
 	}
 
-	//**************************************************************************************************
-
 	//******************************** ALERTS METHODDS**********************************************
 	public static void waitForAlertAndAccept(WebDriver driver, String stepInfo) {
 
@@ -252,8 +248,6 @@ public class Helper {
 
 	}
 	
-	//**************************************************************************************************
-
 	//*************************** METHODS FOR SELECTING DROPDOWN VALUES**********************************
 	public static void waitForWebElementAndSelectValues(WebDriver driver, By locator, String visibleText,
 			String stepInfo) {

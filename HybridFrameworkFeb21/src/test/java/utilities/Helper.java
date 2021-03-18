@@ -30,8 +30,6 @@ public class Helper {
 		System.out.println("GitHUb");
 	}
 	
-	
-	
 	//JUST WAIT METHOD using THREAD CLASS//************************************************************
 	public static void jutWait(int timeInSeconds, String stepInfo) {
 		

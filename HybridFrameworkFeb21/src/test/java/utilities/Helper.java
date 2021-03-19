@@ -93,7 +93,7 @@ public class Helper {
 	}
 	
 		
-	//*****************************JAVASCRIPT METHODS//*********************************************
+	//*****************************JAVASCRIPT METHODS//*************************************************
 		
 	//HIGHLIGHTING WEBELEMENT with JS
 	public static void highlightElement(WebDriver driver, WebElement element) {

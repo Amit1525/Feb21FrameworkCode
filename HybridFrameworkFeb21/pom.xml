@@ -54,7 +54,7 @@
 				<configuration>
 
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>XMLFiles\{xmlfile}</suiteXmlFile>
 					</suiteXmlFiles>
 
 					<systemPropertyVariables>

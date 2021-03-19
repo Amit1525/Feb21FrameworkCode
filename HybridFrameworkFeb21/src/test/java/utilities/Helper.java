@@ -30,13 +30,12 @@ public class Helper {
 		System.out.println("GitHUb");
 	}
 	
-	//JUST WAIT METHOD using THREAD CLASS//************************************************************
+	//JUST WAIT METHOD using THREAD CLASS//**********************************************************
 	public static void jutWait(int timeInSeconds, String stepInfo) {
 		
 		try {
 			Thread.sleep(1000 * timeInSeconds);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		Reporter.log("LOG INFO: " + stepInfo, true);

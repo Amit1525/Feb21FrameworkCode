@@ -22,6 +22,7 @@ public class BrowserFactory {
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 			//System.setProperty("webdriver.chrome.driver", path + "/chromedriver.exe");
+			//System.setProperty("webdriver.chrome.silentOutput", "true");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 

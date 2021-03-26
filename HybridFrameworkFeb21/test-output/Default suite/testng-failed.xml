@@ -3,15 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TestUserPage">
+      <class name="testcases.TestLoginPage">
         <methods>
+          <include name="loginTest"/>
           <include name="addResultToReport"/>
-          <include name="createUser"/>
           <include name="setupReport"/>
           <include name="startBrowser"/>
+          <include name="logoutTest"/>
+          <include name="verifyTitleTest"/>
+          <include name="verifyLogoutTest"/>
+          <include name="verifySocialLinksTest"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testcases.TestUserPage -->
+      </class> <!-- testcases.TestLoginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

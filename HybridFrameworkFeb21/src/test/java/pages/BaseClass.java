@@ -49,15 +49,15 @@ public class BaseClass {
 		System.out.println("LOG:INFO : Report is set");
 	}
 
-	@Parameters({"browser","appURL"})
+	//@Parameters({"browser","appURL"})
 	@BeforeClass
-	public void startBrowser(String browser, String url) {
-		
+	//public void startBrowser(String browser, String url) {
+	public void startBrowser() {	
 		System.out.println("LOG:INFO : Starting the browser session");
 
 		//ConfigDataProvider config = new ConfigDataProvider();
-		//driver = new BrowserFactory().startBrowser(DataProviderFactory.getConfig().getBrowser(), DataProviderFactory.getConfig().getURL());
-		driver = new BrowserFactory().startBrowser(browser, url);
+		driver = new BrowserFactory().startBrowser(DataProviderFactory.getConfig().getBrowser(), DataProviderFactory.getConfig().getURL());
+		//driver = new BrowserFactory().startBrowser(browser, url);
 		//System.out.println("Driver value "+ driver);
 		
 	}

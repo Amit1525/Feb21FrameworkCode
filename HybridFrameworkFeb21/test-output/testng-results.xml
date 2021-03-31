@@ -1,281 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="5" failed="0" ignored="0" total="5" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[LOG:INFO-Type username]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO-Type password]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO-Click on button]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65" started-at="2021-03-25T22:32:40 EDT" finished-at="2021-03-25T22:32:40 EDT">
+  <suite name="Default suite" duration-ms="20332" started-at="2021-03-31T17:31:46 EDT" finished-at="2021-03-31T17:32:06 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65" started-at="2021-03-25T22:32:40 EDT" finished-at="2021-03-25T22:32:40 EDT">
-      <class name="testcases.TestLoginPage">
-        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.TestLoginPage@57e1b0c]" name="setupReport" is-config="true" duration-ms="161" started-at="2021-03-25T22:32:40 EDT" finished-at="2021-03-25T22:32:40 EDT">
+    <test name="Default test" duration-ms="20332" started-at="2021-03-31T17:31:46 EDT" finished-at="2021-03-31T17:32:06 EDT">
+      <class name="testcases.TestAdminPage">
+        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.TestAdminPage@6ee52dcd]" name="setupReport" is-config="true" duration-ms="215" started-at="2021-03-31T17:31:46 EDT" finished-at="2021-03-31T17:31:46 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method status="FAIL" signature="startBrowser(java.lang.String, java.lang.String)[pri:0, instance:testcases.TestLoginPage@57e1b0c]" name="startBrowser" is-config="true" duration-ms="-1616725960803" started-at="2021-03-25T22:32:40 EDT" finished-at="1969-12-31T19:00:00 EST">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method startBrowser but has not been marked @Optional or defined
-in C:\Users\amit1\AppData\Local\Temp\testng-eclipse--1369683780\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method startBrowser but has not been marked @Optional or defined
-in C:\Users\amit1\AppData\Local\Temp\testng-eclipse--1369683780\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:testcases.TestAdminPage@6ee52dcd]" name="startBrowser" is-config="true" duration-ms="7683" started-at="2021-03-31T17:31:46 EDT" finished-at="2021-03-31T17:31:54 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="SKIP" signature="verifyTitleTest()[pri:1, instance:testcases.TestLoginPage@57e1b0c]" name="verifyTitleTest" duration-ms="0" started-at="2021-03-25T22:32:40 EDT" finished-at="2021-03-25T22:32:40 EDT">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method startBrowser but has not been marked @Optional or defined
-in C:\Users\amit1\AppData\Local\Temp\testng-eclipse--1369683780\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method startBrowser but has not been marked @Optional or defined
-in C:\Users\amit1\AppData\Local\Temp\testng-eclipse--1369683780\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="verifyAfterLoginTest()[pri:1, instance:testcases.TestAdminPage@6ee52dcd]" name="verifyAfterLoginTest" duration-ms="7387" started-at="2021-03-31T17:31:54 EDT" finished-at="2021-03-31T17:32:01 EDT">
           <reporter-output>
+            <line>
+              <![CDATA[LOG:INFO-Type username]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO-Type password]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO-Click on button]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- verifyTitleTest -->
-        <test-method status="SKIP" signature="addResultToReport(org.testng.ITestResult)[pri:0, instance:testcases.TestLoginPage@57e1b0c]" name="addResultToReport" is-config="true" duration-ms="-1616725960830" started-at="2021-03-25T22:32:40 EDT" finished-at="1969-12-31T19:00:00 EST">
+        </test-method> <!-- verifyAfterLoginTest -->
+        <test-method status="PASS" signature="addResultToReport(org.testng.ITestResult)[pri:0, instance:testcases.TestAdminPage@6ee52dcd]" name="addResultToReport" is-config="true" duration-ms="502" started-at="2021-03-31T17:32:01 EDT" finished-at="2021-03-31T17:32:02 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAfterLoginTest status=SUCCESS method=TestAdminPage.verifyAfterLoginTest()[pri:1, instance:testcases.TestAdminPage@6ee52dcd] output=LOG:INFO-Type username]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addResultToReport -->
-        <test-method status="SKIP" signature="verifySocialLinksTest()[pri:2, instance:testcases.TestLoginPage@57e1b0c]" name="verifySocialLinksTest" duration-ms="0" started-at="2021-03-25T22:32:40 EDT" finished-at="2021-03-25T22:32:40 EDT">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method startBrowser but has not been marked @Optional or defined
-in C:\Users\amit1\AppData\Local\Temp\testng-eclipse--1369683780\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method startBrowser but has not been marked @Optional or defined
-in C:\Users\amit1\AppData\Local\Temp\testng-eclipse--1369683780\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="clickOnAdminLinkTest()[pri:2, instance:testcases.TestAdminPage@6ee52dcd]" name="clickOnAdminLinkTest" duration-ms="3722" started-at="2021-03-31T17:32:02 EDT" finished-at="2021-03-31T17:32:05 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySocialLinksTest -->
-        <test-method status="SKIP" signature="addResultToReport(org.testng.ITestResult)[pri:0, instance:testcases.TestLoginPage@57e1b0c]" name="addResultToReport" is-config="true" duration-ms="-1616725960836" started-at="2021-03-25T22:32:40 EDT" finished-at="1969-12-31T19:00:00 EST">
+        </test-method> <!-- clickOnAdminLinkTest -->
+        <test-method status="PASS" signature="addResultToReport(org.testng.ITestResult)[pri:0, instance:testcases.TestAdminPage@6ee52dcd]" name="addResultToReport" is-config="true" duration-ms="92" started-at="2021-03-31T17:32:05 EDT" finished-at="2021-03-31T17:32:06 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnAdminLinkTest status=SUCCESS method=TestAdminPage.clickOnAdminLinkTest()[pri:2, instance:testcases.TestAdminPage@6ee52dcd] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addResultToReport -->
-        <test-method status="SKIP" signature="loginTest()[pri:3, instance:testcases.TestLoginPage@57e1b0c]" name="loginTest" duration-ms="0" started-at="2021-03-25T22:32:40 EDT" finished-at="2021-03-25T22:32:40 EDT">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method startBrowser but has not been marked @Optional or defined
-in C:\Users\amit1\AppData\Local\Temp\testng-eclipse--1369683780\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method startBrowser but has not been marked @Optional or defined
-in C:\Users\amit1\AppData\Local\Temp\testng-eclipse--1369683780\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="SKIP" signature="addResultToReport(org.testng.ITestResult)[pri:0, instance:testcases.TestLoginPage@57e1b0c]" name="addResultToReport" is-config="true" duration-ms="-1616725960842" started-at="2021-03-25T22:32:40 EDT" finished-at="1969-12-31T19:00:00 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addResultToReport -->
-        <test-method status="SKIP" signature="logoutTest()[pri:4, instance:testcases.TestLoginPage@57e1b0c]" name="logoutTest" duration-ms="0" started-at="2021-03-25T22:32:40 EDT" finished-at="2021-03-25T22:32:40 EDT">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method startBrowser but has not been marked @Optional or defined
-in C:\Users\amit1\AppData\Local\Temp\testng-eclipse--1369683780\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method startBrowser but has not been marked @Optional or defined
-in C:\Users\amit1\AppData\Local\Temp\testng-eclipse--1369683780\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutTest -->
-        <test-method status="SKIP" signature="addResultToReport(org.testng.ITestResult)[pri:0, instance:testcases.TestLoginPage@57e1b0c]" name="addResultToReport" is-config="true" duration-ms="-1616725960846" started-at="2021-03-25T22:32:40 EDT" finished-at="1969-12-31T19:00:00 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addResultToReport -->
-        <test-method status="SKIP" signature="verifyLogoutTest()[pri:5, instance:testcases.TestLoginPage@57e1b0c]" name="verifyLogoutTest" duration-ms="0" started-at="2021-03-25T22:32:40 EDT" finished-at="2021-03-25T22:32:40 EDT">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method startBrowser but has not been marked @Optional or defined
-in C:\Users\amit1\AppData\Local\Temp\testng-eclipse--1369683780\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method startBrowser but has not been marked @Optional or defined
-in C:\Users\amit1\AppData\Local\Temp\testng-eclipse--1369683780\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="verifyLogoutTest()[pri:3, instance:testcases.TestAdminPage@6ee52dcd]" name="verifyLogoutTest" duration-ms="19" started-at="2021-03-31T17:32:06 EDT" finished-at="2021-03-31T17:32:06 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogoutTest -->
-        <test-method status="SKIP" signature="addResultToReport(org.testng.ITestResult)[pri:0, instance:testcases.TestLoginPage@57e1b0c]" name="addResultToReport" is-config="true" duration-ms="-1616725960850" started-at="2021-03-25T22:32:40 EDT" finished-at="1969-12-31T19:00:00 EST">
+        <test-method status="PASS" signature="addResultToReport(org.testng.ITestResult)[pri:0, instance:testcases.TestAdminPage@6ee52dcd]" name="addResultToReport" is-config="true" duration-ms="98" started-at="2021-03-31T17:32:06 EDT" finished-at="2021-03-31T17:32:06 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogoutTest status=SUCCESS method=TestAdminPage.verifyLogoutTest()[pri:3, instance:testcases.TestAdminPage@6ee52dcd] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addResultToReport -->
-        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:testcases.TestLoginPage@57e1b0c]" name="closeBrowser" is-config="true" duration-ms="-1616725960851" started-at="2021-03-25T22:32:40 EDT" finished-at="1969-12-31T19:00:00 EST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TestAdminPage@6ee52dcd]" name="closeBrowser" is-config="true" duration-ms="720" started-at="2021-03-31T17:32:06 EDT" finished-at="2021-03-31T17:32:06 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.TestLoginPage -->
+      </class> <!-- testcases.TestAdminPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -59,10 +59,7 @@ public class TestLoginPage extends BaseClass {
 		loginPage.verifyLogout();
 	}
 	
-	
-	
-	
-	
+		
 	
 	
 
